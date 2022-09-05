@@ -12,7 +12,8 @@ function Movies() {
         ))}
       </ul>
     </div>
-  ))
+  ));
+  
   return (
     <div>
       <h1>Movies Page</h1>
