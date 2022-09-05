@@ -2,11 +2,11 @@ import React from "react";
 import { directors } from "../data";
 
 function Directors() {
-  const directors = directors.map((director) => (
-    <div key={directors.name}>
-      <h2>{directors.name}</h2>
+  const director = directors.map((director) => (
+    <div key={director.name}>
+      <h2>{director.name}</h2>
       <ul>
-        {directors.movies.map((movie) => (
+        {director.movies.map((movie) => (
           <li key={movie}>{movie}</li>
         ))}
       </ul>
@@ -16,7 +16,7 @@ function Directors() {
   return (
     <div>
       <h1>Directors Page</h1>
-      {directors}
+      {director}
     </div>
   );
 }
